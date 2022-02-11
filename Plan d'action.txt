@@ -1,0 +1,19 @@
+1.	Mettre en place une plateforme qui va repertorier les producteurs d'h�v�a en Cote d'Ivoire {
+	...[]...avec du javascript l'utilisateur entre son nom et on ajoute ça a la page comme un todolist
+	 
+
+}
+
+2.	Permettre � ces producteurs de pouvoir vendre leur produits et les d�riv�s de leur produits(en tout cas un moyen pour mettre en contact acheteur et producteur pour faciliter la vente{
+	...[]...Faire deux boutons (acheteurs et producteurs) pour faciliter les transations: 
+		Si il clique sur acheter,  on lui montre la liste de tous les produits qui sont disponibles qui ont �t� ajouter par les producteurs 
+		SI il clique sur vendre, on incremente par la valeur qu'il va entrer la liste des marchandises disponibles A la vente
+												
+} 
+
+3.	Permettre aux producteurs de se connaitre, ils pourront cr�er des coop�ratives pour am�liorer leur rendement{
+	...[]...une section de rencontre des producteurs incr�menter � chaque fois les producteurs qui se sont inscrits
+		Afficher leur contacts et leur adresse email.
+
+}
+ 

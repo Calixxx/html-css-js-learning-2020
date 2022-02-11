@@ -1,0 +1,42 @@
+/* La scroolbar  */
+
+::-webkit-scrollbar {									/* Scrollbars */
+	width: .875em;
+	height: .875em;
+}
+
+::-webkit-scrollbar-track-piece {						/* Fond */
+	background: transparent none;
+	border: solid .25em transparent;
+	/* border-right-width: .5em; */
+	margin: .25em;
+	-webkit-box-shadow: inset .0625em .0625em 0 0 rgb(137,131,117), inset -.0625em -.0625em 0 0 rgb(224,220,210);
+}
+
+::-webkit-scrollbar-thumb {								/* Barre */
+	border: solid 0 transparent;
+	border-right-width: .25em;
+	-webkit-border-radius: .3125em;
+	-webkit-border-top-right-radius: .5625em .3125em;
+	-webkit-border-bottom-right-radius: .5625em .3125em;
+	-webkit-box-shadow: inset 0 0 0 .0625em rgb(79,79,79), inset 0 0 0 .375em rgb(102,102,102);
+}
+
+::-webkit-scrollbar-thumb:hover {						/* Barre */
+	-webkit-box-shadow: inset 0 0 0 .0625em rgb(90,90,90), inset 0 0 0 .375em rgb(110,110,110);
+}
+
+body ::-webkit-scrollbar {
+	background: transparent none;
+}
+
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}

@@ -1,0 +1,153 @@
+
+.head{
+    background:url(../images/IMAGES/background-boxes.svg)center center /contain no-repeat;
+    width:100%;
+    margin-top:40px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.head-img{
+    width: 200px;
+    height:200px;
+    background:url('../Images/ICONE/OTHERS/contribuer-vert.svg') center center / contain no-repeat;
+}
+
+.main-container{
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.head-title{
+    font-size:30px;
+}
+
+.head-title span{
+    display:block;
+    text-transform: uppercase;
+    color:var(--secondary-color);
+    /* color:#fabad6; */
+    font-weight:bold;
+    font-size:50px;
+}
+
+.main-container{
+    position:relative;
+    margin-bottom: 25px;
+    height:100vh;
+}
+
+.contain{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:600px;
+}
+
+.image img{
+    border-radius:35px;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:50px;
+}
+
+.form input{
+    margin:30px;
+    width:250px;
+    height:40px;
+    text-indent: 18px;
+    font-size: 20px;
+    outline:none;
+    border:none;
+    border-bottom: 1px solid var(--gray);
+    color:var(--secondary-color);
+}
+
+.form input[type = 'submit']:hover{
+    background-color: var(--yellow-ambre);
+}
+
+.form input:active, .form input:focus{
+    border-bottom-color: var(--first-yellow);
+}
+
+.price{
+    position: relative;
+}
+
+.price:after{
+    content:"FCFA";
+    position: absolute;
+    top:40px;
+    right:10px;
+    padding-right:30px;
+    margin-left:30px;
+    z-index:4;
+}
+
+/* Enlever les fleches de input[type = "text" ] */
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
+}
+
+input[type = "submit"]{
+    border:none;
+    cursor: pointer;
+    background-color: var(--first-yellow);
+    color:var(--white);
+    transition: all .6s;
+}
+
+input[type = "submit"]:active{
+    transform: scale(.9);
+}
+
+
+.hide-container{
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,.9);
+    z-index:101;
+}
+
+.image-bonus{
+    background:url("../Images/ICONE/NEWS/africa.svg")center center /contain no-repeat;
+}
+
+.hide-text{
+    color:var(--first-yellow);
+}
+
+.cache{
+    display: none;
+}

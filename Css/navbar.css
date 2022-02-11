@@ -1,0 +1,97 @@
+.header{
+    position: sticky;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:70px;
+    background-color:var(--white);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.banner a{
+    width:50px;
+    height:50px;
+    background:url("../Images/LOGO/evea.svg") center center / contain no-repeat;
+}
+
+.main-nav, .guest-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity .15s ease-in-out,color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.main-nav a, .guest-nav a{
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size:20px;
+    transition: opacity .15s ease-in-out,color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    cursor:pointer;
+}
+
+.main-nav a:after, .guest-nav a:after{
+    content: '';
+    position: absolute;
+    top:5px;
+    left:-20px;
+    width:20px;
+    height:20px;
+}
+
+
+#inscription::after{
+    background: url(../Images/ICONE/NEWS/Copie-de-best-user.svg) center center / contain no-repeat;
+    left:-25px;
+}
+
+#acceuil::after{
+    background: url(../Images/ICONE/NEWS/home.svg) center center / contain no-repeat;
+}
+
+#service::after{
+    background: url(../Images/ICONE/OTHERS/service.svg) center center / contain no-repeat;
+}
+
+#contact::after{
+    background: url(../Images/ICONE/NEWS/phone-call.svg) center center / contain no-repeat;
+}
+
+#contribuer::after{
+    background: url(../Images/ICONE/OTHERS/contribuer.svg) center center / contain no-repeat;
+}
+
+.main-nav a:hover, .guest-nav a:hover{
+    color:var(--secondary-color);
+}
+
+#inscription{
+    position: relative;
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color:var(--secondary-color);
+    z-index:2;
+}
+
+#inscription:hover{
+    color:var(--white);
+}
+
+#inscription::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: var(--secondary-color);
+    width:0;
+    height:27px;
+    transition: all .4s ease-in-out;
+    z-index: -2;
+}
+
+#inscription:hover::before{
+    width:104.63px;
+}

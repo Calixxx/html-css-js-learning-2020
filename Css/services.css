@@ -1,0 +1,239 @@
+.head{
+    background:url(../images/IMAGES/background-boxes.svg)center center /contain no-repeat;
+    width:100%;
+    margin-top:40px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.head-img{
+    width: 200px;
+    height:200px;
+    background:url('../Images/ICONE/OTHERS/service-vert.svg') center center / contain no-repeat;
+}
+
+.main-container{
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.head-title{
+    font-size:30px;
+}
+
+.head-title span{
+    display:block;
+    text-transform: uppercase;
+    color:var(--secondary-color);
+    /* color:#fabad6; */
+    font-weight:bold;
+    font-size:50px;
+}
+
+.after-head{
+    margin:25px 0 0 0;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:25px;
+    color:var(--secondary-color);
+    cursor: pointer;
+}
+
+/*  */
+
+
+.main-container-prod{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.explain{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px 0;
+}
+
+.explain p{
+    font-size:25px;
+}
+
+.container-services{
+    height:100%;
+}
+
+.container-name{
+    position: relative;
+    width:600px;
+    height:400px;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.04);
+    border-radius:15px;
+    overflow-y: auto;
+}
+
+.container-name:after{
+    content:'Cliquez sur les liens pour plus  plus d\'informations...';
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    height:20px;
+    color: var(--secondary-color);
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prod-name{
+    font-size: 20px;
+    width: auto;
+    height: 85px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.prod-name:hover{
+    background-color: #ececec;
+}
+
+.prod-count{
+    position: absolute;
+    top:2px;
+    right:20px;
+    font-size: 25px;
+    font-weight: bold;
+    opacity:1;
+}
+
+.input-area{
+    margin: 20px 0;
+    font-size: 18px;
+    width: 300px;
+    height:50px;
+    border: 1px solid #dcdcdc;
+    text-indent: 18px;
+    outline: none;
+}
+
+.textarea{
+    margin: 20px 0;
+    font-size: 18px;
+    width: 300px;
+    height:100px;
+    border: 1px solid #dcdcdc;
+    text-indent: 18px;
+    text-align: center;
+    outline: none;
+    resize: none;
+}
+
+.input-area:focus{
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 44px 8px rgba(0, 0, 0, 0.03);
+}
+
+.input-btn{
+    width:90px;
+    height:50px;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    outline: none;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.input-btn:active:focus{
+    transform: scale(.9);
+}
+
+
+.infos-sup{
+    position: relative;
+    display:none;
+    margin:20px;
+    /* border: 1px solid var(--secondary-color); */
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.03);
+    text-align: center;
+}
+
+.span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    width:5px;
+    height:5px;
+    background-color: var(--secondary-color);
+    color:var(--black);
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 25px;
+    transition: all .2s;
+    cursor:pointer;
+}
+
+.infos-contain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos-contain-con{
+    display:flex;
+    flex-direction: column;
+}
+
+.inputAdd{
+    font-size: 18px;
+    width: 200px;
+    height:30px;
+    border: 1px solid #dcdcdc;
+    text-indent: 18px;
+    text-align: center;
+    outline: none;
+}
+
+.inputAdd:focus{
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 44px 8px rgba(0, 0, 0, 0.03);
+}
+
+.btnSubmitAdd{
+    width:60px;
+    height:30px;
+    font-size: 15px;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    text-align: center;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+.btnSubmitAdd:active{
+    transform: scale(.9);
+}
+
+.apperate{
+    display:block;
+}

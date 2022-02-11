@@ -1,0 +1,213 @@
+.main-container{
+    margin:20px 80px 10px 80px ;
+    
+}
+
+.page-title{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:15px 0;
+}
+
+.title{
+    color:var(--secondary-color);
+    text-transform: uppercase;
+    font-size:2.5em;
+}
+
+.sub-title{
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+.banniere{
+    position:relative;
+    width:100%;
+    height:400px;
+    background: url('../Images/IMAGES/hevea.jpg')center top / cover no-repeat;
+    /* z-index:-2; */
+    margin:30px 0 70px 0;
+}
+
+.banniere-child{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:20%;
+    width:400px;
+    height:300px;
+    background-color: #f1f1f1;
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:10px;
+
+}
+
+.banniere-title{
+    color:var(--secondary-color);
+    text-align:center;
+}
+
+.banniere-text{
+    border-radius:15px;
+    line-height:1.6em;
+}
+
+.btn-plus{
+    cursor:pointer;
+    padding:20px;
+    background: var(--secondary-color);
+    color:var(--white);
+    transition: all .2s linear;
+}
+
+.btn-plus:hover{
+    transform:scale(1.2);
+}
+
+.btn-plus:active{
+    transform:scale(.9);
+
+}
+
+.second-container{
+    margin: 130px 0;
+}
+
+.main-details{
+    margin-top:15px;
+}
+
+.details-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--gray);
+    text-transform: uppercase;
+    font-size:2.5em;
+}
+
+.link-btn{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.link-btn li a{
+    padding:10px;
+    margin:10px;
+    border-radius:15px;
+    background-color: var(--secondary-color);
+    color:var(--white);
+    font-size:1.6em;
+    transition:all .4s linear;
+}
+
+.link-btn li a:hover{
+    background-color:var(--white);
+    color:var(--secondary-color);
+}
+
+
+.categories{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+.cat-item{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    justify-content: space-between;
+    margin:20px 0;
+    background-color:var(--white);
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width:220px;
+    height:240px;
+    border-radius:10px;
+    transition:all .2s linear;
+    cursor:pointer;
+}   
+
+.cat-item:hover{
+    transform: translateY(-15px);
+}
+
+.cat-item:hover .cat-title{
+    opacity:1;
+}
+
+.cat-item:hover .btn-plus-cat{
+    opacity:1;
+}
+
+.cat-item:before{
+    content:'';
+    position: absolute;
+    top:30%;
+    left:50%;
+    width: 60px;
+    height:60px;
+    transform:translateX(-50%);
+}
+
+.cat-item:first-child:before{
+    background: url(../Images/ICONE/NEWS/stats.svg) center center /contain no-repeat;
+    
+}
+
+.cat-item:nth-child(2):before{
+    background: url(../Images/ICONE/NEWS/practique.svg) center center /contain no-repeat;
+}
+
+.cat-item:nth-child(3):before{
+    background: url(../Images/ICONE/NEWS/appui.svg) center center /contain no-repeat;
+}
+
+.cat-item:nth-child(4):before{
+    background: url(../Images/ICONE/NEWS/aide.svg) center center /contain no-repeat;
+}
+
+.cat-title{
+    font-size:30px;
+    color:var(--black);
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.btn-plus-cat{
+    opacity:0;
+    font-weight:bold;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom: 10px;
+    transition:all .2s;
+    background:var(--white);
+    color:var(--black);
+    transition: all .5s linear;
+}
+
+.btn-plus-cat:hover{
+    transform: scale(.9);
+    font-weight: bold;
+}
+
+.fourth-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.fourth-item{
+    margin:20px;
+    width:100%;
+    height:50px;
+    background-color:teal;  
+}
